@@ -1,8 +1,6 @@
 import streamlit as st
-import send_email as seem
-from email.mime.text import MIMEText
 from PIL import Image
-import imageslider
+
 
 
 st.set_page_config(layout="wide")
@@ -41,19 +39,6 @@ st.write(content3)
 # Contact Me Send Email
 st.header("Contact Me")
 content4 = """
-Whatsapp : +6010-3220722"""
+Whatsapp : +6010-3220722\n
+Email : zhisean@gmail.com"""
 st.write(content4)
-
-with st.form(key="email_forms"):
-    user_email = st.text_input("Your email address")
-    message = st.text_area("Your message")
-    button = st.form_submit_button()
-    if button:
-        format_text = MIMEText(message, 'plain', 'utf-8')
-        message2 = f"""\
-        Subject: New email from {user_email}
-        {user_email}\n
-        {format_text} 
-        """
-        seem.send_email(message2)
-        st.info("Your message is received. I will be replying soon.tm. XD")
