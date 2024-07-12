@@ -6,7 +6,8 @@ import imageslider
 
 
 st.set_page_config(layout="wide")
-st.header("Welcome to our Nirvana， 欢迎来到Nirvana富贵")
+st.header("Welcome to our Nirvana Funeral Parlour")
+st.header(" 欢迎来到Nirvana富贵")
 image1 = Image.open("image/kulai1.jpg")
 st.image(image1.resize((1000, 600)))
 
@@ -16,8 +17,15 @@ content1 = """
 全方位的一条龙服务⭐⭐⭐⭐⭐
 
 我提供的服务包括：“骨灰福位、风水宝地、殡仪配套、遗嘱规划、神主牌位、龙龟生基"""
+content2 = """
+To prepare in advance for a peaceful mind
+To plan according to your wants, with no liability
+We even have 0% interest rate installment plans
+Our services include Burial, Cremation, Ancestral Plate
+and many more!"""
 
 st.write(content1)
+st.write(content2)
 image2 = Image.open("image/image1.png")
 st.image(image2.resize((1000, 450)))
 # imageslider.imageslider1()
@@ -25,28 +33,16 @@ st.image(image2.resize((1000, 450)))
 image3 = Image.open("image/image2.png")
 st.image(image3.resize((1000, 450)))
 
-col1, emptycol1, col2 = st.columns((2, 0.5, 2))
-with col1:
-    image3 = Image.open("image/image3.png")
-    st.image(image3.resize((720, 360)))
-    image4 = Image.open("image/image4.png")
-    st.image(image4.resize((720, 360)))
-    image5 = Image.open("image/image5.png")
-    st.image(image5.resize((720, 360)))
-    image6 = Image.open("image/image6.png")
-    st.image(image6.resize((720, 360)))
-
-with col2:
-    image7 = Image.open("image/image7.png")
-    st.image(image7.resize((720, 360)))
-    image8 = Image.open("image/image8.png")
-    st.image(image8.resize((720, 360)))
-    image9 = Image.open("image/image9.png")
-    st.image(image9.resize((720, 360)))
-
+content3 = """
+想要了解我们的服务与产品，请看左边\n
+To further understand our products, please take a look on the left"""
+st.write(content3)
 
 # Contact Me Send Email
 st.header("Contact Me")
+content4 = """
+Whatsapp : +6010-3220722"""
+st.write(content4)
 
 with st.form(key="email_forms"):
     user_email = st.text_input("Your email address")
