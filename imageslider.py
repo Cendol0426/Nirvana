@@ -88,7 +88,7 @@ def imageslider1():
     
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="image/image2.png" style="width:100%">
+      <img src='image/image2.png' style="width:100%">
       <div class="text">Caption Two</div>
     </div>
     

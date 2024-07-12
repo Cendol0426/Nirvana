@@ -42,12 +42,16 @@ st.write(content5)
 st.write(content1)
 st.write(content2)
 
-image2 = Image.open("image/image1.png")
-st.image(image2.resize((1000, 450)))
+
 # imageslider.imageslider1()
 
-image3 = Image.open("image/image2.png")
-st.image(image3.resize((1000, 450)))
+number = st.slider("For more info", 0, 1)
+
+slidingimage = ["image/image1", "image/image2"]
+image2 = Image.open(slidingimage[number] + ".png")
+st.image(image2.resize((1000, 500)))
+
+
 
 content3 = """
 想要了解我们的服务与产品，请看左边\n
