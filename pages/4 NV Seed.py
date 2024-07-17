@@ -3,6 +3,8 @@ from PIL import Image
 
 st.set_page_config(layout="wide")
 st.title("龙龟生机 NV Seed")
+image1 = Image.open("image/kulai27.png")
+st.image(image1.resize((1000, 500)))
 st.write("""生基也称寿坟、寿穴、是活人的生坟。
 生基,即是“生命的根基”,生基风水借助
 大自然的磁场力量,强化个人八字根基的弱
@@ -17,5 +19,3 @@ tomb.Sheng Ji able to enhance one’s luck and course of destiny.""")
 
 image = Image.open("image2/nvseed1.png")
 st.image(image.resize((1000, 500)))
-image1 = Image.open("image/kulai27.png")
-st.image(image1.resize((1000, 500)))
