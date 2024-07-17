@@ -17,3 +17,5 @@ tomb.Sheng Ji able to enhance one’s luck and course of destiny.""")
 
 image = Image.open("image2/nvseed1.png")
 st.image(image.resize((1000, 500)))
+image1 = Image.open("image/kulai27.png")
+st.image(image1.resize((1000, 500)))

@@ -43,9 +43,9 @@ st.write(content2)
 
 # imageslider.imageslider1()
 
-number = st.slider("请滑动来观看更多资讯与照片 Pictures and Info, Please Slide to view", 1, 2)
+number = st.slider("请滑动来观看更多资讯与照片 Pictures and Info, Please Slide to view", 1, 4)
 
-slidingimage = ["image/image1", "image/image2"]
+slidingimage = ["image/image1", "image/image2", "image/kulai1", "image/kulai27"]
 image2 = Image.open(slidingimage[number - 1] + ".png")
 st.image(image2.resize((1000, 500)))
 

@@ -11,3 +11,5 @@ content = """
 以上资料是关于骨灰位与辈分的关系\n
 Above is information about the relation between seats and elderly"""
 st.info(content)
+image1 = Image.open("image/kulai28.png")
+st.image(image1.resize((720, 360)))

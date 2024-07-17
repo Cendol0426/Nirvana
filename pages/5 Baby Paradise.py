@@ -22,3 +22,5 @@ experiencing life on earth, leaving behind a tender spiritual connection.
 Releasing them from suffering through blessing rituals can help ease the inner guilt of
 
 parents and bring relief to the spirits in the underworld.""")
+image1 = Image.open("image/kulai29.png")
+st.image(image1.resize((720, 360)))
